@@ -5,56 +5,57 @@
         <h1>H2 Computing Sign up Form</h1>
         <p>Please enter your particulars below.</p>
         <p>
-            <table> 
-              <tr> 
-                  <th> </th>
-                  <th> </th>
-              </tr>  
-              <tr> 
-                  <td>
-                      <form>
-                          <p>
-                            First Name: <input firstname="firstname" type="text" value="First Name">
-                          </p>
-                      </form>  
-                  </td>
-                  <td>
-                      <form>
-                          <p>
-                            Last Name: <input lastname="lastname" type="text" value="Last Name"> 
-                          </p>
-                      </form>
-                  </td>
-              </tr>
-              <tr> 
-                  <td>
-                        <form>
-                            <p>
-                              Email: <input email="email" type="text" value="name@email.com">
-                            </p>
-                        </form>  
-                  </td>
-                  <td>
-                    <form>
-                        <p>
-                            Contact: <input contact="contact" type="integer" value=""> 
-                        </p>
-                    </form>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                    <form>
-                        <p>
-                            Class: <input class="class" type="text" value="">
-                        </p>
-                    </form>
-                  </td>
-                  <td>
-                      
-                  </td>
-              </tr>
-            </table>
+            <form action="exercise_02_response.html">
+                <table> 
+                    <tr> 
+                        <td>
+                            <p>First Name: <input name="firstname" type="text" value="First Name"></p>
+                        </td> 
+                        <td>
+                            <p>Last Name: <input name="lastname" type="text" value="Last Name"> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Email: <input name="email" type="text" value="name@email.com"></p>
+                        </td>
+                        <td>
+                            <p> Contact: <input name="contact" type="integer" value=""> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Class: <input name="class" type="text" value=""></p>
+                        </td>
+                        <td>
+                            <select id = "gender" name="gender">
+                                <option value="Male" selected>Male</option>
+                                <option value="Female" selected>Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        Date of Birth: <textarea name="dob">01/01/2000</textarea>
+                    </tr>
+                </table>
+                <p>Subject Combination</p>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" id="pcpme" name="combi" value="pcpme">P CP M E</td></radio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="ccpme" name="combi" value="ccpme">C CP M E</td></radio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <input type="radio" id="other">Other:<input name="other" type="text" value="">
+                    </tr>
+                </table>
+                <p><input type="submit"></p>
+            </form>
         </p>
     </body>
 </html> 
