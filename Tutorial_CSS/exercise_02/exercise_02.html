@@ -1,7 +1,58 @@
 <!DOCTYPE html>
 <head>
-
+    <title>H2 Computing Sign up Form</title>
 </head>
 <body>
-    
+    <h1>H2 Computing Sign up Form</h1>
+    <p>Please enter your particulars below.</p>
+    <p>
+        <form action="exercise_02_response.html">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input name="firstname" type="text" value="First Name"></td>
+                    <td>Last Name:</td>
+                    <td><input name="lastname" type="text" value="Last Name"></td> 
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input name="email" type="text" value="name@email.com"></td>
+                    <td>Contact:</td>
+                    <td><input name="contact" type="integer" value=""></td> 
+                </tr>
+                <tr>
+                    <td>Class:</td>
+                    <td><input name="class" type="text" value=""></td>
+                    <td>Gender:</td>
+                    <td><select id = "gender" name="gender">
+                        <option value="Female" selected>Female</option>
+                        <option value="Male" selected>Male</option> 
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><textarea name="dob">01/01/2000</textarea></td>
+                </tr>
+            </table>
+            <p>Subject Combination:</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" id="pcpme" name="combi" value="pcpme">P CP M E</td></radio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="ccpme" name="combi" value="ccpme">C CP M E</td></radio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="other"> Other:<input name="other" type="text" value="">
+                    </td>
+                </tr>
+            </table>
+            <p><input type="submit"></p>
+        </form>
+    </p>
 </body>
