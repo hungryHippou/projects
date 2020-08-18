@@ -4,23 +4,23 @@ h1 {
     width: 500px;
     height: 40px;
     padding: 10px;
-    color:burlywood;
+    color:rgb(239, 220, 182);
     text-align: center;
     border-style: solid;
     border-width: 3px;
-    border-color: burlywood;
-    background: red;
+    border-color: rgb(239, 220, 182);
+    background: rgb(252, 68, 69);
 }
 
 h2{ 
-    color: burlywood;
+    color: rgb(239, 220, 182);
 }
 p{
     color:rgb(0,255,255);
 }
 
 #special{
-    color:burlywood;
+    color:rgb(239, 220, 182);
 }
 
 table {
