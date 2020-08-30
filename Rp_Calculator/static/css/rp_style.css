@@ -20,9 +20,10 @@ a:hover{
     color: red;
 }
 
-.PWMT {
-    width: 600px;
+.ranks{
+    text-align: right;
 }
 
-
-
+td{
+    width: 600px;
+}

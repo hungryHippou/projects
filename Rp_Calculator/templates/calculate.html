@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="/static/css/rp_style.css">
+</head>
+<body>
+    <p>
+        <table>
+            <tr>
+                <td class="topbar"><a href= "{{ url_for('home') }}">Home</a></td>
+                <td class="topbar"><a href= "{{ url_for('about') }}">About</a></td>
+                <td class="topbar"><a href= "{{ url_for('rp') }}">Rank Point Calculator</a></td>
+            </tr>
+        </table>
+    </p>
+    <h1>Here is your Rank Point!</h1>
+    <p>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th class="ranks">RP</th>
+            </tr>
+            {% for i in range(chosen | length) %}
+            <tr>
+               <td>{{chosen[i]}}</td>  
+               <td>{{got[i]}}</td>  
+               <td class="ranks">{{ranks[i]}}</td>  
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td> </td>
+                <td class="ranks">{{actual}}/{{total}}</td>
+            </tr>
+        </table>
+    </p>
+</body>
+</html>

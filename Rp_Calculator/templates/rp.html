@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <p>
+            <table>
+                <tr>
+                    <td class="topbar"><a href= "{{ url_for('home') }}">Home</a></td>
+                    <td class="topbar"><a href= "{{ url_for('about') }}">About</a></td>
+                    <td class="topbar"><a href= "{{ url_for('rp') }}">Rank Point Calculator</a></td>
+                </tr>
+            </table>
+        </p>
+        <h1>RP Calculator</h1>
+        <form action = "{{ url_for('rp') }}" method="POST">
+            <p>Do you wish to include result of PW?</p>
+            <p>
+                <select class = "PWMT" name="PW">
+                    <option value="yes" selected>Yes</option>
+                    <option value="no" selected>No</option> 
+                </select>
+            </p>
+            <p>Do you wish to include result of Mother Tongue Language?</p>
+            <p>
+                <select class = "PWMT" name="MT">
+                    <option value="yes" selected>Yes</option>
+                    <option value="no" selected>No</option> 
+                </select>
+            </p>
+            <p><input type = "submit" value="Submit"></p>
+        </form> 
+    </body>
+</html>

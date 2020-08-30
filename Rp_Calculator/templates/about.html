@@ -2,8 +2,24 @@
 <html>
     <head>
         <title>About</title>
+        <link rel="stylesheet" href="/static/css/style.css">
     </head>
     <body>
+        <p>
+            <table>
+                <tr>
+                    <td>
+                        <a href= "{{ url_for('home') }}">Home</a>
+                    </td>
+                    <td>
+                        <a href= "{{ url_for('about') }}">About</a>
+                    </td>
+                    <td>
+                        <a href= "{{ url_for('rp') }}">Rank Point Calculator</a>
+                    </td>
+                </tr>
+            </table>
+        </p>
         <h1>About</h1>
         <p>I am...</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate earum sint molestias obcaecati excepturi. Eveniet nostrum provident, alias ipsa reprehenderit soluta corporis veritatis ut vitae delectus sequi iste beatae?</p>

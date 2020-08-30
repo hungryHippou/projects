@@ -20,9 +20,12 @@ a:hover{
     color: red;
 }
 
-.PWMT {
-    width: 600px;
+.subjects{
+    width: 700px;
+    text-align: left;
 }
 
-
-
+.grades{
+    width: 200px;
+    text-align: right;
+}
