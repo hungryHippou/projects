@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>My Webpage</title>
-    <link rel="stylesheet" href="/static/css/rp_style2.css">
+    <link rel="stylesheet" href="/static/css/display.css">
 </head>
 <body>
     <p>
@@ -18,13 +18,13 @@
     <form action="{{ url_for('calculate') }}", method="POST">
         <table>
             <tr>
-                <th>Subject</th>
-                <th>Grades</th> 
+                <th class="subjects">Subject</th>
+                <th class="grades">Grades</th> 
             </tr>
             {% for subject in chosen %}
             <tr>
-                <td id="subjects">{{subject}}</td>
-                <td id="grades">
+                <td class="subjects">{{subject}}</td>
+                <td class="grades">
                     <select name="{{subject}}">
                         {% for grade in grades%}
                         <option value="{{grade}}" selected>{{grade}}</option>
@@ -34,7 +34,7 @@
             </tr>
             {% endfor %}
         </table>
-        <p><input type="submit" value="Submit"></p>
+        <p><input type="submit" value="Calculate!"></p>
     </form>
 </body>
 </html>

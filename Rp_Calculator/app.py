@@ -55,13 +55,13 @@ def calculate():
                     temp = j
                     if i >= 3:
                         actual += points[temp] / 2
-                        ranks.append(points[temp] / 2)
+                        ranks.append('{0:.2f}'.format(points[temp] / 2))
                     else: 
                         actual += points[temp]
-                        ranks.append(points[temp])
+                        ranks.append('{0:.2f}'.format(points[temp]))
 
         return render_template("calculate.html", chosen=chosen, got=got, ranks=ranks,
-        total=total, actual=actual)
+        total='{0:.2f}'.format(total), actual='{0:.2f}'.format(actual))
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -27,3 +27,7 @@ a:hover{
 td{
     width: 600px;
 }
+
+.grade{
+    text-align: center;
+}
