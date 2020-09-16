@@ -25,13 +25,13 @@
             {% for i in range(chosen | length) %}
             <tr>
                <td>{{chosen[i]}}</td>  
-               <td id = "grade">{{got[i]}}</td>  
+               <td class = "grade">{{got[i]}}</td>  
                <td class="ranks">{{ranks[i]}}</td>  
             </tr>
             {% endfor %}
             <tr>
                 <td>Total</td>
-                <td> </td>
+                <td class = "grade"> </td>
                 <td class="ranks">{{actual}}/{{total}}</td>
             </tr>
         </table>
