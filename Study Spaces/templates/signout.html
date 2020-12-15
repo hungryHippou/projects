@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Spaces</title>
+</head>
+<body>
+    <h1>Sign Out</h1>
+    <form action="{{ url_for('signout') }}" method="POST">
+        <p>Matric Number:<input type="text" name="MatricNo"></p>
+        <p>
+            Venue:
+            <select name="venue">
+                <option value="Library" selected>Library</option>
+                <option value="Senior High Lounge" selected>Senior High Lounge</option> 
+                <option value="Junior High Lounge" selected>Junior High Lounge</option>
+                <option value="Fish Tank" selected>Fish Tank</option>
+                <option value="Red Brick Area" selected>Red Brick Area</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Sign Out"></p>
+    </form>
+</body>
+</html>

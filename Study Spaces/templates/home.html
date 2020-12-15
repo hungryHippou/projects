@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Spaces</title>
+</head>
+<body>
+    <h1 align="center">Study Spaces</h1>
+    <p>
+        <table border="1" width="100%"> 
+            <tr>
+                <th>Venue</th>
+                <th>Venue Amenities</th>
+                <th>Current</th>
+                <th>Capacity</th>
+            </tr>
+        {% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </p>
+    <p>
+        <ul>
+            <li><a href="{{ url_for('signin')}}">Sign In</a></li>
+            <li><a href="{{ url_for('signout')}}">Sign Out</a></li>
+        </ul>
+    </p>
+</body>
+</html>

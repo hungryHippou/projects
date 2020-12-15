@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Spaces</title>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form action="{{ url_for('signin') }}" method = "POST">
+        <p>
+            Venue:
+            <select name="venue">
+                <option value="Library" selected>Library</option>
+                <option value="Senior High Lounge" selected>Senior High Lounge</option> 
+                <option value="Junior High Lounge" selected>Junior High Lounge</option>
+                <option value="Fish Tank" selected>Fish Tank</option>
+                <option value="Red Brick Area" selected>Red Brick Area</option>
+            </select>
+        </p> 
+        <p>
+            Matric Number:<input type="text" name="MatricNo">
+        </p>
+        <p>
+            Name:<input type="text" name="Name"> 
+        </p>
+        <p>
+            Class:<input type="text" name="Class">
+        </p>
+        <p><input type = "submit" value="Sign In"></p>
+    </form>
+</body>
+</html>
