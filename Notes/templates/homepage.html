@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A level Notes</title>
+	<link rel="stylesheet" href="/static/css/homepage.css">
+</head>
+<body>
+	<h1>Welcome to A Level Notes!</h1>
+	<p>It's time to start mugging for A levels, start studying.</p>
+	<p>Subjects:</p>
+	<ul>
+		<li id = math><a href="{{ url_for( 'math' ) }}">H2 Math</a></li>
+		<li id = computing><a href="{{ url_for('computing') }}">H2 Computing</a></li>
+		<li id = physics><a href="{{ url_for('physics') }}">H2 Physics</a></li>	
+		<li id = econs><a href="{{url_for('econs') }}">H1 Economics</a></li>
+	</ul>
+<body>
+</html>

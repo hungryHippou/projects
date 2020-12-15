@@ -1,0 +1,25 @@
+
+
+#math{
+	list-style: none;
+	padding: .3em 0 1em 4px;
+	background-image: url(math.png) no-repeat left center 40px;
+}
+
+#physics {
+	list-style: none;
+	padding:.3em 0 1em 4px;
+	background-image: url(physics.png) no-repeat left center 40px;
+}
+
+#econs {
+	list-style: none;
+	padding:.3em 0 1em 4px;
+	background: url(econs.png) no-repeat left center 40px;
+}
+
+#computing {
+	list-style: none;
+	padding:.3em 0 1em 4px;
+	background: url(computing.png) no-repeat left center 40px;
+}
